@@ -121,10 +121,10 @@ while z < len(u):
         for j in subhalos['Gy_Pos']:
             sepy.append(abs(c_halos['Hy_Pos']-j))
         sep = []
-        u = 0
-        while u < len(sepy):
-            sep.append(np.sqrt((sepx[u]**2) + (sepy[u]**2)))
-            u = u + 1
+        y = 0
+        while y < len(sepy):
+            sep.append(np.sqrt((sepx[y]**2) + (sepy[y]**2)))
+            y = y + 1
 
         subhalos['Sep'] = sep
 
